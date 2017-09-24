@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.infinitus</groupId>
+  <artifactId>wechat</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>wechat</name>
+  <description>infinitus wechat project</description>
+  <modules>
+  	<module>wechat-base</module>
+  	<module>wechat-front</module>
+  	<module>wechat-back</module>
+  </modules>
+  
+  <properties>
+		<!-- 主要依赖库的版本定义 -->
+		<spring.version>3.2.5.RELEASE</spring.version>
+		<fastjson.version>1.1.36</fastjson.version>
+		<httpclient.version>4.3.6</httpclient.version>
+		<junit.version>4.11</junit.version>
+		<aspectj.version>1.7.3</aspectj.version>
+		<jedis.version>2.8.2</jedis.version>
+		<mybatis.version>3.2.3</mybatis.version>
+		<spring-data-jpa.version>1.6.1.RELEASE</spring-data-jpa.version>
+		<hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
+		<hibernate.version>4.2.6.Final</hibernate.version>
+		<upload.version>1.3</upload.version>
+		<jackson.version>2.2.3</jackson.version>
+		<tomcat-jdbc.version>7.0.42</tomcat-jdbc.version>
+		<commons-lang3.version>3.1</commons-lang3.version>
+		<hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
+		<freemarker.version>2.3.25-incubating</freemarker.version>
+		<slf4j.version>1.7.5</slf4j.version>
+		<struts2.version>2.3.32</struts2.version>
+		<commons-logging.version>1.1.3</commons-logging.version>
+		<!-- Plugin的属性定义 -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdk.version>1.6</jdk.version>
+		<jetty.version>7.6.13.v20130916</jetty.version>
+	</properties>
+  
+  <repositories>
+		<repository>
+			<id>nexus</id>
+			<name>Team Nexus Repository</name>
+			<url>http://maven.infinitus.com.cn:8081/nexus/content/groups/public</url>
+		</repository>
+		<repository>
+			<id>nexus 3rd party</id>
+			<name>Team Nexus Repository</name>
+			<url>http://maven.infinitus.com.cn:8081/nexus/content/repositories/thirdparty</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>nexus</id>
+			<name>Team Nexus Repository</name>
+			<url>http://maven.infinitus.com.cn:8081/nexus/content/groups/public</url>
+		</pluginRepository>
+	</pluginRepositories>
+	
+	<url>http://maven.apache.org</url>
+</project>
